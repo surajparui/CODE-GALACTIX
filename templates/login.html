@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DECENMUSIC</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='login.css')}}">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <a href="#"><img src="" alt=""></a>
         </div>
         <div class="menulink">
-            <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="{{'/'}}"><i class="fas fa-home"></i><span>Home</span></a>
             <a href="#"><i class="fas fa-search"></i> <span>About</span> </a>
         </div>
         <div class="buttons">
@@ -35,17 +35,16 @@
     </aside>
 
     <main>
-        <div class="container-flex ptb-30 plb-20">
-            <div class=" navbar">
-                <ul class="list-inline">
-                    <li><a href="#topSongs">Top Songs</a></li>
-                    <li><a href="#newest">Newest First</a></li>
-                    <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Langauge</a></li>
-                </ul>
-            </div>
-        </div>
-
+        <!-- <div class="container-flex ptb-30 plb-20"> -->
+        <!-- <div class=" navbar"> -->
+        <!-- <ul class="list-inline"> -->
+        <!-- <li><a href="#topSongs">Top Songs</a></li> -->
+        <!-- <li><a href="#newest">Newest First</a></li> -->
+        <!-- <li><a href="#">Podcasts</a></li> -->
+        <!-- <li><a href="#">Langauge</a></li> -->
+        <!-- </ul> -->
+        <!-- </div> -->
+        <!-- </div> -->
         <section id="page">
             <div class="login">
                 <h1>Login to Web App</h1>

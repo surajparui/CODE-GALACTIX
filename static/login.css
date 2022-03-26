@@ -94,6 +94,10 @@ a:hover {
     background-color: transparent;
 }
 
+body {
+    background-color: black;
+}
+
 main {
     background-color: #182F34;
     margin-left: 250px;
@@ -102,10 +106,16 @@ main {
     overflow: hidden;
 }
 
-.navbar {
-    position: sticky;
+form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
+
+/* 
 .navbar ul li {
     text-transform: uppercase;
     padding-right: 20px;
@@ -127,22 +137,13 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-
-body {
-    background-color: #2a85a1;
-}
-
-#page .logo {
-    margin-right: 25px;
-}
+} */
 
 .login {
     margin: 180px auto;
     padding: 20px 20px 20px;
-    width: 310px;
+    width: 500px;
     background: #222222;
-    ;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -192,23 +193,6 @@ body {
     width: 278px;
 }
 
-.login p.remember_me {
-    float: left;
-    line-height: 31px;
-}
-
-.login p.remember_me label {
-    font-size: 1.0rem;
-    color: rgb(31, 187, 31);
-    cursor: pointer;
-}
-
-.login p.remember_me input {
-    bottom: 1px;
-    margin-right: 4px;
-    vertical-align: middle;
-}
-
 .login p.submit {
     text-align: right;
 }
@@ -228,16 +212,6 @@ body {
 
 .login-help a:hover {
     text-decoration: underline;
-}
-
-:-moz-placeholder {
-    color: #c9c9c9 !important;
-    font-size: 13px;
-}
-
-::-webkit-input-placeholder {
-    color: #ccc;
-    font-size: 13px;
 }
 
 input {
@@ -267,6 +241,11 @@ input[type=password]:focus {
     border-color: #7dc9e2;
     outline-color: #dceefc;
     outline-offset: 0;
+}
+
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    color: black;
 }
 
 input[type=submit] {
@@ -306,15 +285,6 @@ input[type=submit]:hover {
 .lt-ie9 input[type=text],
 .lt-ie9 input[type=password] {
     line-height: 34px;
-}
-
-footer p {
-    font-family: 'PT Serif';
-    font-size: 1.3rem;
-    color: white;
-    background-color: black;
-    padding-bottom: 13px;
-    text-align: center;
 }
 
 @media all and (max-width: 768px) {

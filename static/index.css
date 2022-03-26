@@ -103,10 +103,20 @@ main {
 }
 
 .navbar {
-    position: sticky;
-}
 
+    width: 100%;
+    margin:auto;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+
+}
+.navbar ul{
+    display:flex;
+    flex-direction: row;
+}
 .navbar ul li {
+    list-style: none;
     text-transform: uppercase;
     padding-right: 20px;
     font-size: 1.5rem;
@@ -115,6 +125,9 @@ main {
     letter-spacing: 2px;
 }
 
+.navbar ul li a{
+    font-size: 2.0rem;
+}
 .navbar ul li:first-child {
     color: white;
 }
@@ -167,7 +180,6 @@ footer {
     z-index: 2;
     bottom: 0;
     left: 0;
-    overflow: hidden;
     color: grey;
 }
 
