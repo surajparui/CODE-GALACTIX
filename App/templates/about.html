@@ -14,25 +14,26 @@
 <body>
     <aside class="sidenav">
         <div class="logo">
-            <a href="/about.html"><img src="static/LOGO" alt="LOGO"></a>
+            <a href="{{/index}}"><img src="static/LOGO.png" alt="LOGO"></a>
         </div>
         <div class="menulink">
-            <a href="/App/templates/index.html"><i class="fas fa-home"></i><span>Home</span></a>
-            <a href="/search" id="highlight"><i class="fas fa-search"></i> <span>Search</span> </a>
+            <a href="{{/index}}"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/search"><i class="fas fa-search"></i> <span>Search</span> </a>
         </div>
         <div class="buttons">
-            <a href="/index.html"><button type="button" class="btn btn-light">Log Out</button></a>
+            <a href="{{/login}}"><button type="button" class="btn btn-light">Log Out</button></a>
         </div>
         <div class="cookie col-md-12 text-center">
             <div class="col-md-4  col-sm-12 ">
-                <a href="/about">&#169;<br>2022 CODE GALACTRIX</a>
+                <a href="/about">Copyright &#169; Reserved</a>
             </div>
-            <div class="col-md-2 col-sm-12">  </div>
+            <div class="col-md-2 col-sm-12"> | </div>
             <div class="col-md-6 col-sm-12">
-                <a href="#"></a>
+                <a href="#">Privacy</a>
             </div>
         </div>
     </aside>
+
     <main>
         <div class="container-flex ptb-30 plb-20">
             <div class=" navbar">
@@ -40,7 +41,7 @@
                     <li><a href="#topSongs">Top Songs</a></li>
                     <li><a href="#newest">Newest First</a></li>
                     <li><a href="#">Podcasts</a></li>
-                    <li><a href="#">Search</a></li>
+                    <li><a href="/about">About</a></li>
                 </ul>
             </div>
         </div>

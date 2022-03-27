@@ -14,10 +14,10 @@
 
     <aside class="sidenav">
         <div class="logo">
-            <a href="#"><img src=" {{url_for( 'static',filename='LOGO')}}" alt="LOGO HERE"></a>
+            <a href="{{index.html}}"><img src=" {{url_for( 'static',filename='LOGO')}}" alt="LOGO HERE"></a>
         </div>
         <div class="menulink">
-            <a href="/App/templates/index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="{{index.html}}"><i class="fas fa-home"></i><span>Home</span></a>
             <a href="/search"><i class="fas fa-search"></i> <span>Search</span> </a>
         </div>
         <div class="buttons">
@@ -41,7 +41,7 @@
                     <li><a href="#topSongs">Top Songs</a></li>
                     <li><a href="#newest">Newest First</a></li>
                     <li><a href="#">Podcasts</a></li>
-                    <li><a href="{{'/index'}}">Search engine</a></li>
+                    <li><a href="/about">About</a></li>
                 </ul>
             </div>
         </div>
