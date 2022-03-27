@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECENMUSIC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+
+    <aside class="sidenav">
+        <div class="logo">
+            <a href="/about"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWUZUuqo8f9VmLIcBPU8Lb2drOJCi1OOt07A&usqp=CAU" alt=""></a>
+        </div>
+        <div class="menulink">
+            <a href="/home"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="/about"><i class="fas fa-search"></i> <span>About</span> </a>
+        </div>
+        <div class="buttons">
+            <a href="/"><button type="button" class="btn btn-light">Log Out</button></a>
+        </div>
+        <div class="cookie col-md-12 text-center">
+            <div class="col-md-4  col-sm-12 ">
+                <a href="/about">Copyright &#169;<br>CODE GALACTIX</a>
+            </div>
+            <div class="col-md-2 col-sm-12">  </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="container-flex ptb-30 plb-20">
+            <div class=" navbar">
+                <ul class="list-inline">
+                    <li><a href="#topSongs">Top Songs</a></li>
+                    <li><a href="#newest">Newest First</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="title plb-20" id="topSongs">
+            <h1><strong>TOP SONGS</strong></h1>
+        </div>
+        </div>
+        
+        <div class=" container-flex text-center">
+            <div class="music-card">
+                <a href="#"><img src="{{url_for('static',filename='pic.webp')}}"alt=""></a>
+                <a href=''>
+                    <p>BEST OF ARIJIT SINGH</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="https://doy2mn9upadnk.cloudfront.net/uploads/default/original/4X/7/e/4/7e4e45c917586029a3d1a41a8bdbbb4a91b7b651.png" alt=""></a>
+                <a href="">
+                    <p>BEST OF NCS MUSIC</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA74KEvrPvZVKTVP8YVBevOTbu-QTt3rQqYA&usqp=CAU" alt=""></a>
+                <a href="">
+                    <p>BEST OF THE WEEKND</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="https://media.newyorker.com/photos/60747954c920e996bd1e486d/master/pass/Battan-FearlessTaylorsVersion.jpg" alt=""></a>
+                <a href="{{'#'}}">
+                    <p>BEST OF TAYLOR SWIFT</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b" alt=""></a>
+                <a href="">
+                    <p>BEST OF EMINEM</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href=""><img src="https://cdn.shopify.com/s/files/1/1566/2889/articles/PORTADA-ARIANA-GRANDE.jpg?v=1625039476" alt=""></a>
+                <a href="" >
+                    <p>BEST OF ARIANA GRANDE</p>
+                </a>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="https://i.pinimg.com/originals/da/36/e5/da36e5d2a2cc14e9a624eb192ae75177.jpg" alt=""></a>
+                <a href="" >
+                    <p>BEST OF SELENA GOMEZ</p>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="container-flex" id="newest">
+            <div class="title plb-20">
+                <h1><strong>Trending New</strong></h1>
+            </div>
+        </div>
+        <div class="container-flex text-center">
+            <div class="music-card">
+                <a href="#"><img src="{{url_for('static',filename='rrr.jpg')}}"alt=""></a>
+                <p>RRR</p>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="{{url_for('static',filename='bachan.jpg')}}" alt=""></a>
+                <p>Bachaan Pandey</p>
+            </div>
+            <div class="music-card">
+                <a href="#"><img src="{{url_for('static',filename='rrr.jpg')}}" alt=""></a>
+                <p>Sooryavanshi</p>
+            </div>
+
+        </div>
+    </main>
+    <!-- <footer>
+        <div class="bottom">
+            <input type="range" name="range" id="ProgressBar" min="0" max="100">
+        <div class="playmusic text-center">
+            <ul class="list-inline">
+                <li><a href="#"><i class="fas fa-step-backward"></i></i></a></li>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-step-forward"></i></a></li>
+            </ul>
+        </div>
+
+    </footer> -->
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="{{url_for('static',filename='playing.gif')}}" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+        </div>
+    </div>
+
+    <script src="{{url_for('static',filename='index.js')}}"></script>
+    <script src="{{url_for('static',filename='harry.js')}}"></script>
+    <script src="{{url_for('static',filename='Artistpg1.js')}}"></script>
+
+</body>
+
+</html>

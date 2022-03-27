@@ -78,6 +78,10 @@ def index():
 def login():
     return render_template("login.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
 
 
 
@@ -163,7 +167,7 @@ def search():
 
 # run app
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
 
 
 
